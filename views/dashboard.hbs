@@ -1,13 +1,16 @@
-<h6>Dashboard</h6>
-<h3>Welcome {{name}}</h3>
-<p>Here are your stories</p>
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+<h6 style="color:rgba(180, 126, 0, 0.979);font-family: 'Open Sans';font-size:30px;" >&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dashboard</h6>
+<h3  style="color:rgb(219, 219, 233);font-family: 'Open Sans';font-size:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome &nbsp;   {{name}}</h3><br><br>
+<p style="color:rgb(219, 219, 233);font-family: 'Open Sans';font-size:30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here are your stories:</p><br><br><br>
 {{#if stories}}
 <table class="striped">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Date</th>
-            <th>Status</th>
+            <th style="color:rgba(255, 179, 0, 0.979);font-family: 'Open Sans';font-size:20px;" >Title</th>
+            <th style="color:rgba(255, 179, 0, 0.979);font-family: 'Open Sans';font-size:20px;" >Date</th>
+            <th style="color:rgba(255, 179, 0, 0.979);font-family: 'Open Sans';font-size:20px;" >Status</th>
             <th></th>
         </tr>
     </thead>
@@ -34,5 +37,5 @@
     </tbody>
 </table>
 {{else}}
-<p>You have not created any stories</p>
+<p style="color:rgb(219, 219, 233);font-family: 'Open Sans';font-size:30px;">Whoops!!  Looks like you haven't created any stories. Go ahead and create now by clicking + icon at bottom right.</p>
 {{/if}}

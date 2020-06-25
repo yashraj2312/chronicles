@@ -1,11 +1,26 @@
 p {
     margin: 10px 0 !important;
   }
+body {
+  background-image: url('bd.jpg');
+  background-repeat: no-repeat;
+  
+ 
+  position: relative;
+}
+  
+
+
   
   .login-container {
-    width: 400px;
-    margin-top: 50px;
+    height: 100px;
+    width: 570px;
+    mix-blend-mode: exclusion;
+    margin-top: 100px;
+    margin-right: 100px;
     text-align: center;
+    
+    
   }
   
   .fa-small {
