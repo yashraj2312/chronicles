@@ -54,8 +54,8 @@ app.use(
 )
 
 // Logging
-if (process.env.NODE_ENV === 'production') {
-  app.use(morgan('start'))
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan('dev'))
 }
 
 // Handlebars Helpers
@@ -118,3 +118,5 @@ app.listen(
   PORT,
   console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`)
 )
+
+//cross-env NODE_ENV=production node app
